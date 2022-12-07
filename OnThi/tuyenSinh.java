@@ -113,7 +113,5 @@ public class tuyenSinh {
 				break;
 			}
 		}while(true);
-		
 	}
-
 }

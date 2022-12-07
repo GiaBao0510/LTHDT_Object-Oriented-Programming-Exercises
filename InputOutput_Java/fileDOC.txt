@@ -1,22 +1,60 @@
-Lập trình hướng đối tượng (OOP) là gì?
-Lập trình hướng đối tượng (OOP) là một kỹ thuật lập trình cho phép lập trình viên tạo ra các đối tượng trong code trừu tượng hóa các đối tượng.
-Đối tượng
-Một đối tượng bao gồm 2 thông tin: thuộc tính và phương thức.
+1. Lập trình hướng đối tượng có những gì?
+Lập trình hướng đối tượng (Object Oriented Programming, viết tắt: OOP) là một kỹ thuật lập trình cho phép lập trình viên tạo ra các đối tượng trong code trừu tượng hóa các đối tượng thực tế trong cuộc sống. Nói đến đây có thể các bạn chưa hiểu để mình giải thích rõ hơn:
 
- Thuộc tính chính là những thông tin, đặc điểm của đối tượng. Ví dụ: con người có các đặc tính như mắt, mũi, tay, chân…
- Phương thức là những thao tác, hành động mà đối tượng đó có thể thực hiện. Ví dụ: một người sẽ có thể thực hiện hành động nói, đi, ăn, uống, . . .
-Lớp
-Một lớp là một kiểu dữ liệu bao gồm các thuộc tính và các phương thức được định nghĩa từ trước. Đây là sự trừu tượng hóa của đối tượng. Khác với kiểu dữ liệu thông thường, một lớp là một đơn vị (trừu tượng) bao gồm sự kết hợp giữa các phương thức và các thuộc tính. Hiểu nôm na hơn là các đối tượng có các đặc tính tương tự nhau được gom lại thành một lớp đối tượng.
+Đối tượng (Object) có thể là con người, điện thoại, máy tính, yasuo, leesin ... và điểm chung là đều gồm 2 thành phần chính là:
 
-Sự khác nhau giữa đối tượng và lớp
-Lớp bạn có thể hiểu nó như là khuôn mẫu, đối tượng là một thực thể thể hiện dựa trên khuôn mẫu đó. Ví dụ: Ta nói về loài chó, bạn có thể hiểu nó là class (lớp) chó có:
+Thuộc tính (Attribute): là những thông tin, đặc điểm của đối tượng.
+Phương thức (Method): là những hành động mà đối tượng có thể thực hiện.
+Mình lấy một ví dụ là máy vi tính cho các bạn dễ hiểu nha: 
 
-Các thông tin, đặc điểm: 4 chân, 2 mắt, có đuôi, có chiều cao, có cân nặng, màu lông…
-Các hành động như: sủa, đi, ăn, ngủ…
-Đối tượng thì chính là con chó Phú Quốc ta đang nuôi trong nhà cũng mang đặc tính của lớp chó.
-Các nguyên lý cơ bản của OOP
-Tính đóng gói (Encapsulation)
-Note:
+Máy tính sẽ có các thuộc tính như: màu sắc, kích thước, bộ nhớ, ...
+Và các phương thức như: quét virus, tắt máy, khởi động máy, mở LoL ...
+Khi một đối tượng có những đặc tính như nhau sẽ được gom lại thành một lớp đối tượng (class) và cũng sẽ có 2 thành phần là thuộc tính và phương thức. Lớp (class) cũng có thể được dùng để định nghĩa một kiểu dữ liệu mới.
 
-Các dữ liệu và phương thức có liên quan với nhau được đóng gói thành các lớp để tiện cho việc quản lý và sử dụng. Tức là mỗi lớp được xây dựng để thực hiện một nhóm chức năng đặc trưng của riêng lớp đó.
- Ngoài ra, đóng gói còn để che giấu một số thông tin và chi tiết cài đặt nội bộ để bên ngoài không thể nhìn thấy.
+Với ví dụ máy vi tính trên ta hiểu lớp (class) máy vi tính có:
+
+Các thuộc tính như: màu sắc, kích thước, bộ nhớ, ...
+Và các phương thức như: quét virus, tắt máy, khởi động máy, mở LoL ...
+Và đối tượng (object) có thể là các dòng máy như Asus, Acer, Lenovo, Thinkpad, ... đều mang đặc tính của lớp máy vi tính.
+
+Vậy tại sao lại cần đến cái "Lập trình hướng đối tượng" rối rắm này?
+
+Nếu như trước đây chúng ta lập trình với hướng thủ tục thì sẽ chia thành các hàm để xử lý, thì giờ đây khi sử dụng hướng đối tượng thì chúng ta sẽ chia thành các đối tượng để xử lý.
+
+Vì lập trình hướng đối tượng ra đời sau nên nó khắc phục được tất cả các điểm yếu của các phương pháp lập trình trước đó. Cụ thể nó có các ưu điểm sau:
+
+Dễ dàng quản lý code khi có sự thay đổi chương trình.
+Dễ mở rộng dự án.
+Có tính bảo mật cao.
+Có thể sử dụng mã nguồn, tiết kiệm tài nguyên.
+2. Các đặc điểm cơ bản của lập trình hướng đối tượng:   
+2.1. Tính đóng gói (Encapsulation): Tính chất này không cho phép người dùng trực tiếp tác động đến dữ liệu bên trong đối tượng mà phải thông qua các phương thức mà đối tượng cung cấp. Tính chất này đảm bảo tính toàn vẹn của đối tượng.
+
+Một ví dụ về tính đóng gói: 
+Trong đoạn code trên tính đóng gói được thể hiện qua các thuộc tính mausac, chieudai, chieurong và phương thức input(), output() vào trong class mayvitinh. Bạn không thể truy cập đến các private data hoặc gọi đến private methods của class từ bên ngoài class đó.
+
+2.2. Tính kế thừa (Inheritance): Kế thừa, tái sử dụng phương thức, thuộc tính của lớp cơ sở và lớp kế thừa được gọi là lớp con, nó sẽ thừa hưởng những gì lớp cha có và cho phép.
+
+Cũng với ví dụ là class mayvitinh, class này sẽ có các thuộc tính: mausac, chieudai, chieurong. Một class mayAsus, mayAcer sẽ kế thừa class mayvitinh do mayAsus cũng có các thuộc tính: mausac, chieudai, chieurong.  Thay vì sao chép những thuộc tính này, ta nên đặt chúng vào một lớp chung gọi là lớp cha – trong trường hợp này là mayvitinh và có những lớp con mayAsus, mayAcer kế thừa từ nó, tạo ra một mối quan hệ cha/con.
+
+2.3. Tính đa hình (Polymorphism): Tính đa hình cho phép các chức năng (method) khác nhau được thực thi khác nhau trên các đối tượng khác nhau.
+
+Ví dụ như class mayvitinh ở trên, mỗi một dòng máy đều kế thừa từ lớp cha mayvitinh nhưng được chạy với một hệ điều hành khác nhau, mayAsus thì được chạy với hệ điều hành Windows, còn mayMacbook sẽ được chạy với hệ diều hành MacOs.
+
+2.4. Tính trừu tượng(Abstraction): Tập trung vào cốt lõi của đối tượng, bỏ qua những thứ không liên quan và không quan trọng.
+
+ Ví dụ: Bài toán quản lý sinh viên chúng ta chỉ cần quản lý các thông tin như
+
+Họ tên
+Ngày sinh
+Giới tính
+…
+mà lại không cần quản lý thêm các thông tin:
+
+Cân nặng
+Màu da
+Chiều cao
+Tại vì chúng thực sự không cần thiết.
+
+Kết 
+Đây chỉ là những khái niệm cơ bản các bạn cần nắm đề chuẩn bị cho những part sau. Cụ thể mình sẽ tìm hiểu rõ hơn về từng tính chất của lập trình hướng đối tượng. Các bạn nhớ đón xem và góp ý để những bài sau tốt hơn nhé.

@@ -1,38 +1,18 @@
+package basicJava;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
-public class thuNghiem {
-
+public class thuNghiem extends thiNghiem{
+	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n;
-		System.out.print("Nhap so luong ma: "); n = sc.nextInt();
-		String ds[] = new String[n];
-		sc.nextLine();
-		for(int i=0;i<n;i++) {
-			ds[i] = new String();
-			System.out.print("Nhap ma thu "+(i+1)+" : "); ds[i] = sc.nextLine();
-		}
-		String tim = new String();
-		System.out.print("Nhap ma can tim: "); tim = sc.nextLine();
-		int l=0,r=n-1;
-		int vet = -1;
-		while(r>l) {
-			if(ds[l].compareToIgnoreCase(tim) == 0) {
-				vet = l;
-				break;
-			}
-			if(ds[r].compareToIgnoreCase(tim) == 0) {
-				vet = r;
-				break;
-			}
-			l++;
-			r--;
-		}
-		if(vet!=-1) {
-			System.out.println("Tim thay "+ds[vet]+"O vi tri: "+(vet+1));
-		}else {
-			System.out.println("Khong tim thay");
-		}
+		int i=1,j=10;
+		do {
+			
+			i++;
+			--j;
+			System.out.println("i = "+i+" ;j = "+j);
+		}while(i<5);
+		System.out.println("i = "+i+" ;j = "+j);
 	}
 
 }

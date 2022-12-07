@@ -1,3 +1,4 @@
+package basicJava;
 import java.util.Scanner;
 
 public class BaiTap_6 {

@@ -96,10 +96,10 @@ public class CoBan_Arraylist {
 				X.set(n - 1, S);// Cap nhat gia tri tai vi tri n-1 trong Arraylist
 			}
 		}
-		//8. Xoa that ca phan tu trong Arraylist (.clear())
+		//8. Xoa tat ca phan tu trong Arraylist (.clear())
 		public void xoaTatCaDuLieuTrongArrayList(ArrayList<String> X) {
 			if(X.isEmpty()/*Kiem tra xem arraylist co rong khong*/ == true) {
-				System.out.println("Danh sach rong khonf the xoa.");
+				System.out.println("Danh sach rong khong the xoa.");
 			}else {
 				X.clear();//Xoa toan bo du lieu
 			}

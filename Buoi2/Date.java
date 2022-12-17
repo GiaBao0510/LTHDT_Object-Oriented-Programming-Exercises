@@ -7,13 +7,12 @@ public class Date {
 	private int day, month, year;
 
 //Phương thức
-	// Hàm mặc nhiên
-	public Date(){
+	public Date(){	// Hàm mặc nhiên
 		this.day=1;
 		this.month=1;
 		this.year=1;
 	}
-	public Date(int d,int m,int y) {
+	public Date(int d,int m,int y) {	//Ham xay dung co doi so
 		this.day=d;
 		this.month=m;
 		this.year=y;
@@ -24,7 +23,7 @@ public class Date {
 		year = X.year;
 	}
 	//Hàm không mặc nhiên
-	public void MyDate(int d, int m, int y) {
+	public void MyDate(int d, int m, int y) {	//Ham gan
 		this.day = d;
 		this.month = m;
 		this.year = y;

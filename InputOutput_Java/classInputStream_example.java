@@ -9,7 +9,7 @@ public class classInputStream_example {
 			System.out.println("Nhap chuoi: ");
 			byte[] b = new byte[100]; // Tao vung dem de nhap chuoi
 			try {
-				int n = System.in.read(b); // Nhap n ky tu
+				int n = System.in.read(b); // Doi ky tu dau vao thanh so roi luu vao mang b
 				String str = new String(b, 0, n - 2); // doi byte[] => String
 				if (str.equals("Exit")) {	//Dieu kien thoat
 					System.out.println("Thoat.");
